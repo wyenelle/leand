@@ -1,0 +1,1582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <link
+      rel="stylesheet"
+      href="../fontawesome-free-6.5.1-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Leand - Connecting</title>
+  </head>
+  <body>
+    <main class="">
+      <!-- Navbar starts here -->
+      <nav class="h-[70px] relative w-full">
+        <div class="w-[90%] mx-auto flex justify-between items-center h-full">
+          <div class=" ">
+            <h1 class="text-2xl lg:text-3xl">Leand</h1>
+          </div>
+
+          <!-- hamburger icons -->
+          <div class="lg:hidden">
+            <i
+              class="fa fa-bars text-2xl"
+              id="hamburger"
+              onclick="openDropdown()"
+            ></i>
+            <i
+              class="fa-sharp fa-solid fa-square-xmark text-3xl cancel-icon"
+              id="hamburger2"
+              onclick="closeDropdown()"
+            ></i>
+            <!-- end of icons -->
+
+            <!-- mobile drop down begins -->
+            <div
+              id="dropdown-content"
+              class="z-20 absolute top-[70px] left-0 bg-gray-200 w-full shadow-lg hidden lg:hidden"
+            >
+              <ul class="order-2">
+                <a href=""
+                  ><li
+                    class="p-5 w-full border-gray-300 border-solid border-0 border-b-2"
+                  >
+                    <span class="text-mc-shade-darkest text-sm font-bold">
+                      Home</span
+                    >
+                  </li></a
+                >
+                <a href=""
+                  ><li
+                    class="p-5 w-full border-gray-300 border-solid border-0 border-b-2"
+                  >
+                    <span class="text-mc-shade-darkest text-sm font-bold"
+                      >About Us</span
+                    >
+                  </li></a
+                >
+                <a href="" class=""
+                  ><li
+                    class="p-5 w-full border-gray-300 border-solid border-0 border-b-2"
+                  >
+                    <span class="text-mc-shade-darkest text-sm font-bold"
+                      >Book a Session</span
+                    >
+                  </li></a
+                >
+                <li
+                  class="bg-blue-200 w-full text-center text-blue-600 py-3 px-7 rounded-md font-semibold"
+                >
+                  <a href="">Get Started</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Mobile Ends -->
+          </div>
+          <!-- Large screen starts -->
+          <div class="hidden lg:block h-full">
+            <ul class="order-2 flex h-full gap-[5rem] w-full">
+              <a href=""
+                ><li
+                  class="border-gray-300 border-solid h-full flex items-center"
+                >
+                  <span class="text-mc-shade-darkest text-sm font-bold">
+                    Home</span
+                  >
+                </li></a
+              >
+              <a href=""
+                ><li
+                  class="border-gray-300 border-solid h-full flex items-center"
+                >
+                  <span class="text-mc-shade-darkest text-sm font-bold"
+                    >About Us</span
+                  >
+                </li></a
+              >
+              <a href="" class=""
+                ><li
+                  class="border-gray-300 border-solid h-full flex items-center"
+                >
+                  <span class="text-mc-shade-darkest text-sm font-bold py-3"
+                    >Book a Session</span
+                  >
+                </li></a
+              >
+              <li
+                class="bg-green-100 text-center p-5 text-blue-500 rounded-md font- flex items-center"
+              >
+                <a href="">Get Started</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Nav Ends -->
+
+      <!-- hero section -->
+      <div class="">
+        <div class="lg:h-[80vh] lg:flex lg:items-center lg:w-[90%] lg:mx-auto">
+          <!-- first column -->
+          <div
+            class="mt-16 mb-8 mx-auto sm:mt-20 w-[90%] py-8 lg:py-0 lg:mt-0 lg:h-[90%] lg:w-[50%] lg:mb-0 lg:flex lg:justify-center lg:flex-col lg:items-start"
+          >
+            <h1
+              class="text-center font-normal tracking-tight text-6xl lg:text-start lg:w-10/12"
+            >
+              Make your <span class="text-blue-500">dreams</span> come true
+            </h1>
+            <p
+              class="text-center mt-5 mb-8 w-10/12 mx-auto text-xl lg:text-start lg:mx-0 lg:w-6/12 lg:text-2xl"
+            >
+              Learn a new skill, launch a project, land your dream career.
+            </p>
+            <button
+              class="h-[60px] flex justify-center outline-none rounded-lg items-center bg-blue-500 text-white w-[87%] mx-auto font-extrabold text-xl lg:text-start lg:mx-0"
+            >
+              Get Started
+            </button>
+          </div>
+
+          <!-- Second column -->
+          <div class="hidden lg:block w-[50%] h-[90%]">
+            <div class="flex justify-center items-center w-full h-full">
+              <img
+                src="plex.svg"
+                alt="This is a teacher"
+                class="w-[90%] h-[90%]"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of hero section -->
+
+      <!-- at your fingertips begins -->
+      <div class="">
+        <div class="bg-[#172e59] text-white h-full">
+          <div class="mx-auto w-[90%]">
+            <div class="py-5 w-[90%] mx-auto">
+              <h2 class="text-3xl mb-4 text-white font-bold mt-4">
+                At your fingertips: a dedicated career coach.
+              </h2>
+              <p class="text-xl mb8 border-solid">
+                Want to ace your next job interview? Successfully build your
+                startup? Itching to learn high-demand skills? Work smart with an
+                online mentor or <a href=""><span>coach</span></a> by your side
+                to offer expert advice and guidance to match your zeal. Become
+                unstoppable using MentorCruise.
+              </p>
+            </div>
+
+            <!-- three column fingertips -->
+            <ul
+              class="space-y-4 sm:grid sm:grid-cols-1 sm:gap-6 sm:space-y-0 lg:grid-cols-3 lg:gap-8 justify-between"
+            >
+              <li class="text-white">
+                <div class="p-6 text-center rounded-lg xl:px-10">
+                  <div class="flex justify-center">
+                    <h3 class="font-bold text-xl text-center">
+                      Find Your Mentor
+                    </h3>
+                  </div>
+                  <div class="flex justify-center my-4">
+                    <img src="svg/mc-logo.svg" alt="" />
+                  </div>
+                  <div class="flex justify-center">
+                    <p class="text-base text-center">
+                      Explore our growing catalogue of experienced mentors until
+                      you find the perfect fit.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="text-white">
+                <div class="p-6 text-center rounded-lg xl:px-10">
+                  <div class="flex justify-center">
+                    <h3 class="font-bold text-xl">Apply for Mentorship</h3>
+                  </div>
+                  <div class="flex justify-center my-4">
+                    <img src="svg/mc-edit.svg" alt="" />
+                  </div>
+                  <div class="flex justify-center">
+                    <p class="text-base text-center">
+                      Fill in an application, and if you’re a match with your
+                      chosen mentor you can start your free 7-day trial.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="text-white">
+                <div class="p-6 text-center rounded-lg xl:px-10">
+                  <div class="flex justify-center">
+                    <h3 class="font-bold text-xl">Level up your skills</h3>
+                  </div>
+                  <div class="flex justify-center">
+                    <div class="flex justify-center my-4">
+                      <img src="svg/mc-rocket.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="flex justify-center">
+                    <p class="text-base text-center">
+                      From personal chats to hands-on support, each mentor
+                      offers different services to help you skyrocket your
+                      career.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <!-- end of three column fingertip-->
+
+            <!-- button section fingertip -->
+            <div class="flex flex-col items-center space-y-4 my-8">
+              <a href="">
+                <button type="submit" class="">Find my mentor</button>
+              </a>
+              <a
+                href=""
+                class="flex justify-center w-full md:w-auto text-sm text-white underline font-semibold hover:text-mc-green"
+                >Become a mentor</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Ending of fingertip -->
+
+
+
+      <!-- New skill section begins -->
+      <div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
+        <div class="space-y-12">
+          <div
+            class="mx-auto bg-white z-50 space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none"
+          >
+            <h2
+              class="relative text-3xl lg:text-center mx-auto max-w-2xl font-bold tracking-tight sm:text-4xl mb-5"
+            >
+              Learn that new skill, launch that project, land your dream career.
+            </h2>
+            <p class="relative text-xl lg:text-center mx-auto max-w-3xl">
+              Your online mentor can elevate your career or be a shoulder to
+              lean on. Get a personalized mentoring program, including curated
+              study plans, regular check-ins, and unlimited actionable support.
+              Be part of an online mentor community that spans across the globe.
+            </p>
+          </div>
+        </div>
+        <!-- chat section begins -->
+        <ul
+          class="space-y-4 sm:grid sm:grid-cols-1 sm:gap-2 lg:grid-cols-2 lg:gap-8"
+        >
+          <li class="max-w-lg mx-auto p-6 text-left rounded-lg xl:px-10">
+            <div class="text-lg leading-6 space-y-1">
+              <div class="flex items-center space-x-4 py-4">
+                <img
+                  src="svg/chat-bubble.svg"
+                  alt="Chat Bubble"
+                  data-cmp-ab="2"
+                  data-cmp-info="10"
+                />
+                <span class="font-bold text-base">CHAT</span>
+              </div>
+              <div class="flex">
+                <h3 class="font-bold text-3xl">
+                  Expert mentorship. One text away.
+                </h3>
+              </div>
+              <div>
+                <p class="my-4 text-base">
+                  Ask questions, kick the tires on a new idea, or discuss
+                  professional progress and improvements in your online
+                  mentoring sessions with unlimited messaging.
+                </p>
+                <p class="my-4 text-base">
+                  Have an upcoming interview at Amazon? Need help in product
+                  management or marketing? Whatever it is, our online mentors
+                  are there for you.
+                </p>
+              </div>
+              <div>
+                <p class="my-4 text-base font-bold">
+                  Fewer interruptions in your day-to-day and easier
+                  documentation. A text away, get expert guidance at your
+                  convenience from your mentor.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <img src="./svg/chat-screen_2x.webp" alt="" />
+          </li>
+
+          <li>
+            <img src="svg/chat-screen_2x.webp" alt="" />
+          </li>
+
+          <li class="max-w-lg mx-auto p-6 text-left rounded-lg xl:px-10">
+            <div class="text-lg leading-6 space-y-1">
+              <div class="flex items-center space-x-4 py-4">
+                <img
+                  src="svg/goals-icon.svg"
+                  alt="Goals"
+                  data-cmp-ab="2"
+                  data-cmp-info="10"
+                />
+                <span class="font-bold text-base">ESTABLISH MILESTONES</span>
+              </div>
+              <div class="flex">
+                <h3 class="font-bold text-3xl">
+                  Shortcut growth through expert guidance.
+                </h3>
+              </div>
+              <div>
+                <p class="my-4 text-base">
+                  Get invaluable knowledge from veterans and founders. Through
+                  effective mentorship, eliminate the time spent on figuring out
+                  your next steps. Get an action plan, and gain wisdom from
+                  consistent mentoring sessions.
+                </p>
+                <p class="my-4 text-base"></p>
+              </div>
+              <div class="flex items-center space-x-4">
+                <picture
+                  class="flex items-center max-w-screen-lg w-12 h-12"
+                ></picture>
+              </div>
+              <div class="flex-col flex">
+                <p class="text-sm italic">
+                  "In just a few weeks, I feel a LOT more confident navigating
+                  the React world. Chris has been an excellent mentor."
+                </p>
+                <p class="text-sm italic font-bold">
+                  - Tom Ray, a <a href="" class="underline">React</a> mentee.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="max-w-lg mx-auto p-6 text-left rounded-lg xl:px-10">
+            <div class="text-lg leading-6 space-y-1">
+              <div class="flex items-center space-x-4 py-4">
+                <img
+                  src="svg/videochat-icon.svg"
+                  alt="Video-chat"
+                  data-cmp-ab="2"
+                  data-cmp-info="10"
+                />
+                <span class="font-bold text-base">VIDEO CALLS</span>
+              </div>
+              <div class="flex">
+                <h3 class="font-bold text-3xl">Talk it out. Face-to-face.</h3>
+              </div>
+              <div>
+                <p class="my-4 text-base">
+                  Online mentorship shouldn’t compromise genuine
+                  interactions—enter video chat.
+                </p>
+                <p class="my-4 text-base">
+                  When you’re stuck in a logjam, be it a design flaw, code
+                  defect, or business decision, skip the endless back-and-forth
+                  of essays and talk it out face-to-face with your mentor on
+                  video call.
+                </p>
+              </div>
+              <div class="flex items-center space-x-4">
+                <picture
+                  class="flex items-center max-w-screen-lg w-12 h-12"
+                ></picture>
+              </div>
+              <div class="flex-col flex">
+                <p class="text-sm italic">
+                  "After our sessions, I cleared interviews left and right and
+                  was actually offered three positions in Germany."
+                </p>
+                <p class="text-sm italic font-bold">
+                  - Bassma Hefni, a
+                  <a href="" class="underline">Product Design</a> mentee.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <img src="svg/bounce_ideas_2x.webp" alt="" />
+          </li>
+        </ul>
+        <!-- chat section ends -->
+
+        <!-- button section for chat section begins-->
+        <div
+          class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4"
+        >
+          <a href="">
+            <button type="submit">Find My Mentor</button>
+          </a>
+          <a
+            href=""
+            class="flex justify-center w-full md:w-auto text-sm underline font-semibold text-navy-900 hover:text-mc-green"
+            >Become a Mentor</a
+          >
+        </div>
+        <!-- button section for chat section ends-->
+      </div>
+      <!-- new skill section ends -->
+
+      <!-- Arsenal  begins -->
+      <div
+        class="relative text-navy-900"
+        style="
+          background: linear-gradient(
+            rgb(255, 255, 255) 0%,
+            rgb(141, 210, 210) 40%
+          );
+          --darkreader-inline-bgimage: linear-gradient(#dcdad7 0%, #5be1e1 40%);
+          --darkreader-inline-bgcolor: initial;
+        "
+        data-darkreader-inline-bgimage=""
+        data-darkreader-inline-bgcolor=""
+      >
+        <div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
+          <div class="space-y-20">
+            <div
+              class="mx-auto space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none"
+            >
+              <h2
+                class="text-3xl lg:text-center mx-auto max-w-2xl font-bold tracking-tight sm:text-4xl"
+              >
+                An arsenal of industry veterans and mentoring packages at a
+                flexible price.
+              </h2>
+              <p class="text-xl lg:text-center mx-auto max-w-3xl">
+                Pick from a curated collection of mentors and services. Try them
+                out for 7 days with no obligation. Found your mentoring sessions
+                useful? Move to a low-cost, monthly mentoring subscription. No
+                lock-ins, no hidden fees – Just accelerated professional growth.
+              </p>
+            </div>
+            <ul
+              class="flex flex-col md:flex-row justify-center items-center md:space-x-4 lg:space-x-8 space-y-4 md:space-y-0"
+            >
+              <li>
+                <div
+                  class="w-72 py-4 px-6 space-y-4 bg-white text-left rounded-lg shadow-lg"
+                >
+                  <div
+                    class="flex flex-row justify-between px-2 items-center space-y-2 xl:flex xl:items-center xl:justify-between"
+                  >
+                    <div class="flex flex-col md:justify-between">
+                      <h3 class="font-bold text-base">Ayla S.</h3>
+                      <p class="text-xs lg:text-sm text-gray-400 w-36">
+                        Top-rated marketing expert
+                      </p>
+                    </div>
+                    <div>
+                      <picture
+                        class="px-8 lg:px-0 max-w-screen-lg z-30"
+                        data-cmp-info="9"
+                      >
+                        <img
+                          src="svg/ayla_2x.webp"
+                          class="rounded-full h-16 w-16"
+                          alt="Ayla S."
+                          data-cmp-ab="2"
+                          data-cmp-info="10"
+                        />
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="space-y-4">
+                    <div
+                      class="flex justify-between items-center w-full rounded-md bg-gray-100 py-2 px-4"
+                    >
+                      <p class="text-mc-blue font-semibold text-xs lg:text-sm">
+                        Mentorship
+                      </p>
+                      <p class="text-mc-green font-bold text-xs">$150/month</p>
+                    </div>
+                    <hr />
+                    <div
+                      class="flex justify-between items-center w-full rounded-md bg-gray-100 py-2 px-4"
+                    >
+                      <p class="text-mc-blue font-semibold text-xs lg:text-sm">
+                        Intro Session
+                      </p>
+                      <p class="text-mc-green font-bold text-xs">$39</p>
+                    </div>
+                    <div
+                      class="flex justify-between items-center w-full rounded-md bg-gray-100 py-2 px-4"
+                    >
+                      <p class="text-mc-blue font-semibold text-xs lg:text-sm">
+                        CV Review
+                      </p>
+                      <p class="text-mc-green font-bold text-xs">$69</p>
+                    </div>
+                    <div
+                      class="flex justify-between items-center w-full rounded-md bg-gray-100 py-2 px-4"
+                    >
+                      <p class="text-mc-blue font-semibold text-xs lg:text-sm">
+                        Launch Plan
+                      </p>
+                      <p class="text-mc-green font-bold text-xs">$129</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="hidden md:block">
+                <div
+                  class="w-72 py-4 px-6 space-y-4 bg-white text-left rounded-lg shadow-lg"
+                >
+                  <div
+                    class="flex flex-row justify-between px-2 items-center space-y-2 xl:flex xl:items-center xl:justify-between"
+                  >
+                    <div class="flex flex-col md:justify-between">
+                      <h3 class="font-bold text-base">Francois J.</h3>
+                      <p class="text-xs lg:text-sm text-gray-400 w-36">
+                        Full-Stack Software Developer
+                      </p>
+                    </div>
+                    <div>
+                      <picture
+                        class="px-8 lg:px-0 max-w-screen-lg z-30"
+                        data-cmp-info="9"
+                      >
+                        <img
+                          src="svg/francois_2x.webp"
+                          class="rounded-full h-16 w-16"
+                          alt="Francois J."
+                          data-cmp-ab="2"
+                          data-cmp-info="10"
+                        />
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="space-y-4">
+                    <div
+                      class="flex justify-between items-center w-full rounded-md bg-gray-100 py-2 px-4"
+                    >
+                      <p class="text-mc-blue font-semibold text-xs lg:text-sm">
+                        Mentorship
+                      </p>
+                      <p class="text-mc-green font-bold text-xs">$99/month</p>
+                    </div>
+                    <hr />
+                    <div
+                      class="flex justify-between items-center w-full rounded-md bg-gray-100 py-2 px-4"
+                    >
+                      <p class="text-mc-blue font-semibold text-xs lg:text-sm">
+                        Intro Session
+                      </p>
+                      <p class="text-mc-green font-bold text-xs">$39</p>
+                    </div>
+                    <div
+                      class="flex justify-between items-center w-full rounded-md bg-gray-100 py-2 px-4"
+                    >
+                      <p class="text-mc-blue font-semibold text-xs lg:text-sm">
+                        CV Review
+                      </p>
+                      <p class="text-mc-green font-bold text-xs">$69</p>
+                    </div>
+                    <div
+                      class="flex justify-between items-center w-full rounded-md bg-gray-100 py-2 px-4"
+                    >
+                      <p class="text-mc-blue font-semibold text-xs lg:text-sm">
+                        Launch Plan
+                      </p>
+                      <p class="text-mc-green font-bold text-xs">$129</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="hidden lg:block">
+                <div
+                  class="w-72 py-4 px-6 space-y-4 bg-white text-left rounded-lg shadow-lg"
+                >
+                  <div
+                    class="flex flex-row justify-between px-2 items-center space-y-2 xl:flex xl:items-center xl:justify-between"
+                  >
+                    <div class="flex flex-col md:justify-between">
+                      <h3 class="font-bold text-base">Annie L.</h3>
+                      <p class="text-xs lg:text-sm text-gray-400 w-36">
+                        UX Designer
+                      </p>
+                    </div>
+                    <div>
+                      <picture
+                        class="px-8 lg:px-0 max-w-screen-lg z-30"
+                        data-cmp-info="9"
+                      >
+                        <img
+                          src="svg/annie_2x.webp"
+                          class="rounded-full h-16 w-16"
+                          alt="Annie L."
+                          data-cmp-ab="2"
+                          data-cmp-info="10"
+                        />
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="space-y-4">
+                    <div
+                      class="flex justify-between items-center w-full rounded-md bg-gray-100 py-2 px-4"
+                    >
+                      <p class="text-mc-blue font-semibold text-xs lg:text-sm">
+                        Mentorship
+                      </p>
+                      <p class="text-mc-green font-bold text-xs">$50/month</p>
+                    </div>
+                    <hr />
+                    <div
+                      class="flex justify-between items-center w-full rounded-md bg-gray-100 py-2 px-4"
+                    >
+                      <p class="text-mc-blue font-semibold text-xs lg:text-sm">
+                        Intro Session
+                      </p>
+                      <p class="text-mc-green font-bold text-xs">$39</p>
+                    </div>
+                    <div
+                      class="flex justify-between items-center w-full rounded-md bg-gray-100 py-2 px-4"
+                    >
+                      <p class="text-mc-blue font-semibold text-xs lg:text-sm">
+                        Portfolio Review
+                      </p>
+                      <p class="text-mc-green font-bold text-xs">$69</p>
+                    </div>
+                    <div
+                      class="flex justify-between items-center w-full rounded-md bg-gray-100 py-2 px-4"
+                    >
+                      <p class="text-mc-blue font-semibold text-xs lg:text-sm">
+                        Expert Session
+                      </p>
+                      <p class="text-mc-green font-bold text-xs">$140</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <div
+              class="bg-white rounded-md pt-8 pb-12 opacity-90"
+              id="feature-box"
+            >
+              <div class="px-8 sm:px-6 lg:max-w-7xl lg:px-8">
+                <ul
+                  class="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-8"
+                >
+                  <li>
+                    <div class="flex justify-center items-center space-x-6">
+                      <div
+                        class="flex justify-center items-center h-12 w-12 rounded-md"
+                      >
+                        <img
+                          src="svg/magnifying-glass.svg"
+                          alt="Free Trial"
+                          class="mt-4"
+                          data-cmp-ab="2"
+                          data-cmp-info="10"
+                        />
+                      </div>
+                      <dl>
+                        <dt
+                          class="mt-5 text-2xl leading-6 text-mc-blue font-bold"
+                        >
+                          Free Trial
+                        </dt>
+                        <dd class="mt-2 text-lg">
+                          Get the first 7 days free, with every mentor
+                        </dd>
+                      </dl>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="flex justify-center items-center space-x-6">
+                      <div
+                        class="flex justify-center items-center h-12 w-12 rounded-md"
+                      >
+                        <img
+                          src="svg/pen-and-paper.svg"
+                          alt="No Strings"
+                          class="mt-4"
+                          data-cmp-ab="2"
+                          data-cmp-info="10"
+                        />
+                      </div>
+                      <dl>
+                        <dt
+                          class="mt-5 text-2xl leading-6 text-mc-blue font-bold"
+                        >
+                          No Strings
+                        </dt>
+                        <dd class="mt-2 text-lg">
+                          Cancelling is simple and can be done anytime
+                        </dd>
+                      </dl>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="flex justify-center items-center space-x-6">
+                      <div
+                        class="flex justify-center items-center h-12 w-12 rounded-md"
+                      >
+                        <img
+                          src="svg/chart-bars.svg"
+                          alt="Fully vetted"
+                          class="mt-4"
+                          data-cmp-ab="2"
+                          data-cmp-info="10"
+                        />
+                      </div>
+                      <dl>
+                        <dt
+                          class="mt-5 text-2xl leading-6 text-mc-blue font-bold"
+                        >
+                          Fully vetted
+                        </dt>
+                        <dd class="mt-2 text-lg">
+                          We demand the highest quality service from our mentors
+                        </dd>
+                      </dl>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4"
+            >
+              <a href="" data-cmp-ab="2">
+                <button type="submit" class="blue-btn" href="">
+                  Find my mentor
+                </button> </a
+              ><a
+                class="flex justify-center w-full md:w-auto text-sm text-navy-900 underline font-medium hover:text-mc-shade-dark"
+                href=""
+                data-cmp-ab="2"
+                >Become a Mentor</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Arsenal Ends -->
+
+      <!-- session begins -->
+      <div id="sessions-component">
+        <div class="bg-navy-900 text-navy-900">
+          <div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
+            <div class="space-y-12">
+              <div
+                class="mx-auto space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none"
+              >
+                <h2
+                  class="text-3xl lg:text-center mx-auto max-w-2xl text-white font-bold tracking-tight sm:text-4xl"
+                >
+                  Not sure if mentorship is right for you? Give it a try with a
+                  one-off session.
+                </h2>
+                <p class="text-xl lg:text-center mx-auto max-w-3xl text-white">
+                  A quick, easy call with an expert is just one click away with
+                  our attractive one-off sessions. Picking a brain, talking
+                  through an issue or getting to know an industry expert has
+                  never been easier.
+                </p>
+              </div>
+              <ul
+                class="relative z-20 space-y-8 sm:grid sm:grid-cols-1 sm:gap-6 sm:space-y-0 lg:grid-cols-3 lg:gap-8"
+              >
+                <img
+                  class="hidden lg:block absolute -left-20 -top-20 z-10"
+                  src=""
+                  alt="Dots"
+                  data-cmp-ab="2"
+                  data-cmp-info="10"
+                />
+                <img
+                  class="hidden lg:block absolute -right-20 -bottom-20 z-10"
+                  src=""
+                  alt="Dots"
+                  data-cmp-ab="2"
+                  data-cmp-info="10"
+                />
+
+                <li class="z-10">
+                  <div class="p-6 bg-white text-left rounded-lg xl:px-10">
+                    <div class="xl:flex xl:items-center xl:justify-between">
+                      <div class="font-medium text-lg leading-6 space-y-6">
+                        <div class="flex">
+                          <h3 class="font-extrabold text-2xl">
+                            Introductory Call
+                          </h3>
+                        </div>
+                        <div>
+                          <p class="my-4 font-normal text-base">
+                            If you're looking for a mentor, and you're just not
+                            sure about how this all works – this should be for
+                            you. In a casual, informal introductory call, a
+                            mentor will introduce themselves ...
+                            <a
+                              class="font-bold underline text-mc-blue hover:text-mc-green"
+                              href=""
+                              title="Interview Preparation"
+                              data-cmp-ab="2"
+                              >Read More</a
+                            >
+                          </p>
+                        </div>
+                        <div class="flex justify-between">
+                          <h3 class="font-extrabold text-lg">
+                            Approx. 30 minutes
+                          </h3>
+                          <h3 class="font-extrabold text-mc-green text-lg">
+                            $39
+                          </h3>
+                        </div>
+                        <div class="flex items-center">
+                          <a class="space-x-4" href="" data-cmp-ab="2">
+                            <button
+                              type="submit"
+                              class="flex items-center bg-mc-blue-secondary cursor-pointer text-white px-6 py-2 uppercase tracking-wider text-sm font-semibold border-0 rounded hover:bg-mc-shade-dark transition-ease"
+                              href=""
+                            >
+                              Explore
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="p-6 bg-white text-left rounded-lg xl:px-10">
+                    <div class="xl:flex xl:items-center xl:justify-between">
+                      <div class="font-medium text-lg leading-6 space-y-6">
+                        <div class="flex">
+                          <h3 class="font-extrabold text-2xl">Study Plan</h3>
+                        </div>
+                        <div>
+                          <p class="my-4 font-normal text-base">
+                            Looking to learn a new skill? The vast amount of
+                            resources on any topic on the internet can feel
+                            overwhelming at times. A mentor can give you an
+                            overview of worthwhile ...
+                            <a
+                              class="font-bold underline text-mc-blue hover:text-mc-green"
+                              href=""
+                              title="Interview Preparation"
+                              data-cmp-ab="2"
+                              >Read More</a
+                            >
+                          </p>
+                        </div>
+                        <div class="flex justify-between">
+                          <h3 class="font-extrabold text-lg">
+                            Approx. 45 minutes
+                          </h3>
+                          <h3 class="font-extrabold text-mc-green text-lg">
+                            $39
+                          </h3>
+                        </div>
+                        <div class="flex items-center">
+                          <a class="space-x-4" href="" data-cmp-ab="2">
+                            <button
+                              type="submit"
+                              class="flex items-center bg-mc-blue-secondary cursor-pointer text-white px-6 py-2 uppercase tracking-wider text-sm font-semibold border-0 rounded hover:bg-mc-shade-dark transition-ease"
+                              href=""
+                            >
+                              Explore
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="z-10">
+                  <div class="p-6 bg-white text-left rounded-lg xl:px-10">
+                    <div class="xl:flex xl:items-center xl:justify-between">
+                      <div class="font-medium text-lg leading-6 space-y-6">
+                        <div class="flex">
+                          <h3 class="font-extrabold text-2xl">
+                            Interview Preparation
+                          </h3>
+                        </div>
+                        <div>
+                          <p class="my-4 font-normal text-base">
+                            Some big interviews coming up? In this 1-hour
+                            session, a mentor with hiring experience will act as
+                            a technical interviewer and ask you some standard
+                            hiring questions ...
+                            <a
+                              class="font-bold underline text-mc-blue hover:text-mc-green"
+                              href=""
+                              title="Interview Preparation"
+                              data-cmp-ab="2"
+                              >Read More</a
+                            >
+                          </p>
+                        </div>
+                        <div class="flex justify-between">
+                          <h3 class="font-extrabold text-lg">
+                            Approx. 60 minutes
+                          </h3>
+                          <h3 class="font-extrabold text-mc-green text-lg">
+                            $99
+                          </h3>
+                        </div>
+                        <div class="flex items-center">
+                          <a class="space-x-4" href="" data-cmp-ab="2">
+                            <button
+                              type="submit"
+                              class="flex items-center bg-mc-blue-secondary cursor-pointer text-white px-6 py-2 uppercase tracking-wider text-sm font-semibold border-0 rounded hover:bg-mc-shade-dark transition-ease"
+                              href=""
+                            >
+                              Explore
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="md:flex md:justify-center md:items-center">
+                <a class="teal-btn" href="" data-cmp-ab="2">Show me more </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- session ends -->
+
+      <!-- last section begins  -->
+      <div id="testimonials-b">
+        <div class="bg-navy-900 px-4 py-12 lg:py-24">
+          <div class="grid grid-cols-1 sm:grid-cols-3 max-w-screen-xl mx-auto">
+            <div>
+              <div
+                class="mx-auto space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none text-white"
+              >
+                <h2
+                  class="text-2xl text-white mx-auto max-w-2xl font-bold tracking-tight sm:text-3xl"
+                >
+                  Still not convinced?<br />
+                  Don’t just take our word for it
+                </h2>
+                <p class="text-lg text-gray-100 mx-auto max-w-3xl">
+                  We’ve already delivered 1-on-1 mentorship to thousands of
+                  students, professionals, managers and executives. Even better,
+                  they’ve left an average rating of 4.9 out of 5 for our
+                  mentors.
+                </p>
+              </div>
+              <a class="teal-btn mt-8 mb-8" href data-cmp-ab="2"
+                >Find a mentor</a
+              >
+            </div>
+            <div class="col-span-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
+              <div class="space-y-12">
+                <ul
+                  class="relative z-20 space-y-4 sm:grid sm:grid-cols-1 sm:gap-6 sm:space-y-0 md:grid-cols-2 lg:grid-cols-2 lg:gap-8"
+                >
+                  <li>
+                    <div
+                      class="flex flex-col justify-between p-6 h-full z-40 bg-white rounded-lg shadow-lg font-medium text-left text-lg leading-6 xl:px-10"
+                    >
+                      <div>
+                        <div class="flex gap-x-4">
+                          <img
+                            src=""
+                            class="h-12 w-12 rounded-full"
+                            alt="Naz"
+                            loading="lazy"
+                            data-cmp-ab="2"
+                            data-cmp-info="10"
+                          />
+                          <div>
+                            <h3 class="font-bold text-gray-900 text-base">
+                              Farzad
+                            </h3>
+                            <p class="text-gray-500 text-sm">
+                              <a href="" class="text-gray-500" data-cmp-ab="2"
+                                >Leadership Mentee</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                        <p class="my-4 font-normal italic text-base">
+                          "<a
+                            class="text-navy-900 font-bold"
+                            href=""
+                            data-cmp-ab="2"
+                            >Naz </a
+                          >is an amazing person and a wonderful mentor. She is
+                          supportive and knowledgeable with extensive practical
+                          experience. Having been a manager at Netflix, she also
+                          <i class="bg-indigo-100"
+                            >knows a ton about working with teams at scale</i
+                          >. Highly recommended."
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div
+                      class="flex flex-col justify-between p-6 h-full z-40 bg-white rounded-lg shadow-lg font-medium text-left text-lg leading-6 xl:px-10"
+                    >
+                      <div>
+                        <div class="flex gap-x-4">
+                          <img
+                            src=""
+                            class="h-12 w-12 rounded-full"
+                            alt="Brandon"
+                            loading="lazy"
+                            data-cmp-ab="2"
+                            data-cmp-info="10"
+                          />
+                          <div>
+                            <h3 class="font-bold text-gray-900 text-base">
+                              Rao
+                            </h3>
+                            <p class="text-gray-500 text-sm">
+                              <a href="" class="text-gray-500" data-cmp-ab="2"
+                                >Engineering Mentee</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                        <p class="my-4 font-normal italic text-base">
+                          "<a
+                            class="text-navy-900 font-bold"
+                            href=""
+                            data-cmp-ab="2"
+                            >Brandon </a
+                          >has been supporting me with a software engineering
+                          job hunt and has provided
+                          <i class="bg-indigo-100"
+                            >amazing value with his industry knowledge, tips
+                            unique to my situation and support</i
+                          >
+                          as I prepared for my interviews and applications."
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div
+                      class="flex flex-col justify-between p-6 h-full z-40 bg-white rounded-lg shadow-lg font-medium text-left text-lg leading-6 xl:px-10"
+                    >
+                      <div>
+                        <div class="flex gap-x-4">
+                          <img
+                            src=""
+                            class="h-12 w-12 rounded-full"
+                            alt="Sandrina"
+                            loading="lazy"
+                            data-cmp-ab="2"
+                            data-cmp-info="10"
+                          />
+                          <div>
+                            <h3 class="font-bold text-gray-900 text-base">
+                              Clara
+                            </h3>
+                            <p class="text-gray-500 text-sm">
+                              <a href="" class="text-gray-500" data-cmp-ab="2"
+                                >Web Development Mentee</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                        <p class="my-4 font-normal italic text-base">
+                          "<a
+                            class="text-navy-900 font-bold"
+                            href=""
+                            data-cmp-ab="2"
+                            >Sandrina </a
+                          >helped me improve as an engineer. Looking back, I
+                          took a huge step,
+                          <i class="bg-indigo-100">beyond my expectations</i>."
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="hidden md:block">
+                    <div
+                      class="flex flex-col justify-between p-6 h-full z-40 bg-white rounded-lg shadow-lg font-medium text-left text-lg leading-6 xl:px-10"
+                    >
+                      <div>
+                        <div class="flex gap-x-4">
+                          <img
+                            src=""
+                            class="h-12 w-12 rounded-full"
+                            alt="Andrii"
+                            loading="lazy"
+                            data-cmp-ab="2"
+                            data-cmp-info="10"
+                          />
+                          <div>
+                            <h3 class="font-bold text-gray-900 text-base">
+                              Volha
+                            </h3>
+                            <p class="text-gray-500 text-sm">
+                              <a href="" class="text-gray-500" data-cmp-ab="2"
+                                >Java Mentee</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                        <p class="my-4 font-normal italic text-base">
+                          "<a
+                            class="text-navy-900 font-bold"
+                            href=""
+                            data-cmp-ab="2"
+                            >Andrii </a
+                          >is the best mentor I have ever met. He explains
+                          things clearly and helps to solve almost any problem.
+                          He
+                          <i class="bg-indigo-100"
+                            >taught me so many things about the world of Java</i
+                          >
+                          in so a short period of time!"
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="hidden lg:block">
+                    <div
+                      class="flex flex-col justify-between p-6 h-full z-40 bg-white rounded-lg shadow-lg font-medium text-left text-lg leading-6 xl:px-10"
+                    >
+                      <div>
+                        <div class="flex gap-x-4">
+                          <img
+                            src=""
+                            class="h-12 w-12 rounded-full"
+                            alt="Greg"
+                            loading="lazy"
+                            data-cmp-ab="2"
+                            data-cmp-info="10"
+                          />
+                          <div>
+                            <h3 class="font-bold text-gray-900 text-base">
+                              Amber
+                            </h3>
+                            <p class="text-gray-500 text-sm">
+                              <a href="" class="text-gray-500" data-cmp-ab="2"
+                                >Business Mentee</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                        <p class="my-4 font-normal italic text-base">
+                          "<a
+                            class="text-navy-900 font-bold"
+                            href=""
+                            data-cmp-ab="2"
+                            >Greg </a
+                          >is literally helping me achieve my dreams. I had very
+                          little idea of what I was doing – Greg was the missing
+                          piece that offered me
+                          <i class="bg-indigo-100"
+                            >down to earth guidance in business</i
+                          >."
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="hidden lg:block">
+                    <div
+                      class="flex flex-col justify-between p-6 h-full z-40 bg-white rounded-lg shadow-lg font-medium text-left text-lg leading-6 xl:px-10"
+                    >
+                      <div>
+                        <div class="flex gap-x-4">
+                          <img
+                            src=""
+                            class="h-12 w-12 rounded-full"
+                            alt="Anna"
+                            loading="lazy"
+                            data-cmp-ab="2"
+                            data-cmp-info="10"
+                          />
+                          <div>
+                            <h3 class="font-bold text-gray-900 text-base">
+                              Pierre
+                            </h3>
+                            <p class="text-gray-500 text-sm">
+                              <a href="" class="text-gray-500" data-cmp-ab="2"
+                                >Design Mentee</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                        <p class="my-4 font-normal italic text-base">
+                          "<a
+                            class="text-navy-900 font-bold"
+                            href=""
+                            data-cmp-ab="2"
+                            >Anna </a
+                          >really helped me a lot. Her mentoring was very
+                          structured, she could answer all my questions and
+                          inspired me a lot. I can already see that
+                          <i class="bg-indigo-100"
+                            >this has made me even more successful</i
+                          >
+                          with my agency."
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- last section ends -->
+      <!--  footer begins -->
+      <footer class="bg-white" id="footer" aria-labelledby="footerHeading">
+        <h2 id="footerHeading" class="sr-only">Footer</h2>
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+          <div class="xl:grid xl:grid-cols-3 xl:gap-8" id="footer-content">
+            <div class="space-y-8 xl:col-span-1">
+              <a href="/" class="flex items-center space-x-4" data-cmp-ab="2">
+                <img
+                  class="h-10"
+                  style="width: 225px"
+                  src=""
+                  alt="MentorCruise Logo"
+                  data-cmp-ab="2"
+                  data-cmp-info="10"
+                />
+              </a>
+              <p class="text-gray-500 text-base font-normal">
+                Your trusted source to find highly-vetted mentors &amp; industry
+                professionals to move your career ahead.
+              </p>
+              <div class="flex space-x-6">
+                <a
+                  href=""
+                  title="MentorCruise Facebook"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="text-gray-400 hover:text-gray-500"
+                >
+                  <span class="sr-only">Facebook</span>
+
+                </a>
+                <a
+                  href=""
+                  title="MentorCruise Instagram"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="text-gray-400 hover:text-gray-500"
+                  data-cmp-ab="2"
+                >
+                  <span class="sr-only">Instagram</span>
+
+                </a>
+                <a
+                  href=""
+                  title="MentorCruise Twitter"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="text-gray-400 hover:text-gray-500"
+                  data-cmp-ab="2"
+                >
+                  <span class="sr-only">Twitter</span>
+                
+                </a>
+                <a
+                  href=""
+                  title="MentorCruise Linkedin"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="text-gray-400 hover:text-gray-500"
+                  data-cmp-ab="2"
+                >
+                  
+                  ><span class="sr-only">LinkedIn</span>
+                </a>
+              </div>
+            </div>
+            <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+              <div class="md:grid md:grid-cols-2 md:gap-8">
+                <div>
+                  <h3
+                    class="text-sm font-semibold text-gray-400 tracking-wider uppercase"
+                  >
+                    Platform
+                  </h3>
+                  <ul class="mt-4 space-y-4">
+                    <li>
+                      <a
+                        href=""
+                        class="text-base font-normal text-gray-500 hover:text-gray-900"
+                        data-cmp-ab="2"
+                      >
+                        Browse Mentors
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href=""
+                        class="text-base font-normal text-gray-500 hover:text-gray-900"
+                        data-cmp-ab="2"
+                      >
+                        Book a Session
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href=""
+                        class="text-base font-normal text-gray-500 hover:text-gray-900"
+                        data-cmp-ab="2"
+                      >
+                        Become a Mentor
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href=""
+                        class="text-base font-normal text-gray-500 hover:text-gray-900"
+                        data-cmp-ab="2"
+                      >
+                        Mentorship for Teams
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href=""
+                        class="text-base font-normal text-gray-500 hover:text-gray-900"
+                        data-cmp-ab="2"
+                      >
+                        Testimonials
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mt-12 md:mt-0">
+                  <h3
+                    class="text-sm font-semibold text-gray-400 tracking-wider uppercase"
+                  >
+                    Resources
+                  </h3>
+                  <ul class="mt-4 space-y-4">
+                    <li>
+                      <a
+                        href=""
+                        class="text-base font-normal text-gray-500 hover:text-gray-900"
+                        data-cmp-ab="2"
+                      >
+                        Newsletter
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href=""
+                        class="text-base font-normal text-gray-500 hover:text-gray-900"
+                        data-cmp-ab="2"
+                      >
+                        Case Studies
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href=""
+                        class="text-base font-normal text-gray-500 hover:text-gray-900"
+                        data-cmp-ab="2"
+                      >
+                        Books
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href=""
+                        class="text-base font-normal text-gray-500 hover:text-gray-900"
+                        data-cmp-ab="2"
+                      >
+                        Perks
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href=""
+                        class="text-base font-normal text-gray-500 hover:text-gray-900"
+                        data-cmp-ab="2"
+                      >
+                        Templates
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href=""
+                        class="text-base font-normal text-gray-500 hover:text-gray-900"
+                        data-cmp-ab="2"
+                      >
+                        Spreadsheet
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href=""
+                        class="text-base font-normal text-gray-500 hover:text-gray-900"
+                        data-cmp-ab="2"
+                      >
+                        Career Paths
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href=""
+                        class="text-base font-normal text-gray-500 hover:text-gray-900"
+                        data-cmp-ab="2"
+                      >
+                        Blog
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="md:grid md:grid-cols-2 md:gap-8">
+                <div>
+                  <h3
+                    class="text-sm font-semibold text-gray-400 tracking-wider uppercase"
+                  >
+                    Company
+                  </h3>
+                  <ul class="mt-4 space-y-4">
+                    <li>
+                      <a
+                        href=""
+                        class="text-base font-normal text-gray-500 hover:text-gray-900"
+                        data-cmp-ab="2"
+                      >
+                        About
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href=""
+                        class="text-base font-normal text-gray-500 hover:text-gray-900"
+                        data-cmp-ab="2"
+                      >
+                        Partner Program
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href=""
+                        class="text-base font-normal text-gray-500 hover:text-gray-900"
+                        data-cmp-ab="2"
+                      >
+                        Code of Conduct
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href=""
+                        class="text-base font-normal text-gray-500 hover:text-gray-900"
+                        data-cmp-ab="2"
+                      >
+                        Privacy Policy
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href=""
+                        class="text-base font-normal text-gray-500 hover:text-gray-900"
+                        data-cmp-ab="2"
+                      >
+                        DMCA
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mt-12 md:mt-0">
+                  <h3
+                    class="text-sm font-semibold text-gray-400 tracking-wider uppercase"
+                  >
+                    Support
+                  </h3>
+                  <ul class="mt-4 space-y-4">
+                    <li>
+                      <a
+                        href=""
+                        class="text-base font-normal text-gray-500 hover:text-gray-900"
+                        data-cmp-ab="2"
+                      >
+                        FAQ
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href=""
+                        class="text-base font-normal text-gray-500 hover:text-gray-900"
+                        data-cmp-ab="2"
+                      >
+                        Contact
+                      </a>
+                    </li>
+                  </ul>
+                  <h3
+                    class="mt-12 text-sm font-semibold text-gray-400 tracking-wider uppercase"
+                  >
+                    Collections
+                  </h3>
+                  <ul class="mt-4 space-y-4">
+                    <li>
+                      <a
+                        href=""
+                        class="text-base font-normal text-gray-500 hover:text-gray-900"
+                        data-cmp-ab="2"
+                      >
+                        Groups
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href=""
+                        class="text-base font-normal text-gray-500 hover:text-gray-900"
+                        data-cmp-ab="2"
+                      >
+                        Companies
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-12 border-t border-gray-200 pt-8">
+            <p class="text-base font-normal text-gray-400 xl:text-center">
+              © 2024
+              <a
+                class="underline text-gray-400 normal-case"
+                href=""
+                data-cmp-ab="2"
+                >MentorCruise</a
+              >. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+      <!-- footer ends -->
+    </main>
+  </body>
+</html>
